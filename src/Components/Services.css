@@ -1,0 +1,170 @@
+/* General Container Styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* Service Title Styling */
+.service-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #2a5d84;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.service-title:hover {
+  color: #007bff;  /* Change color on hover */
+}
+
+/* Service Card Styling */
+.transport-service-card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.transport-service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #2a5d84;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+  
+
+.transport-services-container {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* About Section Styling */
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the title */
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-header p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+/* Image and Text Section */
+.img {
+  display: flex;
+  align-items: flex-start; /* Align items at the top */
+  gap: 8rem; /* Space between image and text */
+  margin-top: 2rem;
+}
+
+.img img {
+  margin-top: 2.5rem;
+  max-width: 450px; /* Adjust image size */
+  height: 55vh; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for better look */
+}
+
+.img p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.8;
+  margin-top: 2rem;
+  text-align: justify; /* Makes the paragraph text more readable */
+  font-family: 'Arial', sans-serif; /* Limit text width */
+}
+
+/* Services Section */
+.services-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  text-align: center;
+  color: #e67e22;
+
+}
+.info p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.8;
+  margin-top: 2rem;
+  text-align: justify; /* Makes the paragraph text more readable */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Services Grid Layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 2rem; /* Adds space between the cards */
+  margin-top: 2rem;
+}
+
+/* Ensuring the grid is responsive */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* 1 item per row on small screens */
+  }
+}
+
+.transport-service-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.transport-service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.service-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+
+}
+
+.service-description {
+  font-size: 0.9rem;
+  color: #555;
+}

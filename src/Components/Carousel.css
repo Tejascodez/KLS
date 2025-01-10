@@ -1,0 +1,52 @@
+
+/* Carousel Container Styling */
+.carousel {
+  height: 500px;  /* Increased the height of the carousel */
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-item {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Title and Text Styling */
+.carousel-caption {
+  position: absolute;
+  top: 50%;  /* Center the caption vertically */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background for readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carousel-caption h5 {
+  font-size: 2.5rem;  /* Larger font size for better readability */
+  font-weight: bold;  /* Bold the title */
+  letter-spacing: 2px;  /* Add spacing to make the title more professional */
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  font-weight: normal;  /* Regular weight for the description text */
+  line-height: 1.5;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Add responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .carousel-caption h5 {
+      font-size: 2rem;
+  }
+
+  .carousel-caption p {
+      font-size: 1rem;
+  }
+}
+  

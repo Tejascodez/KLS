@@ -1,0 +1,253 @@
+/* AboutUs.css */
+
+.about-us-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.about-header {
+  text-align: center;
+  padding: 50px 20px;
+  /* background: #f4f4f4; */
+}
+
+.about-header h1 {
+  font-size: 3em; /* Increase font size */
+  font-weight: bold; /* Make text bold */
+  color: #e67e22; /* Add an attractive color */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
+  letter-spacing: 2px; /* Add letter spacing */
+  margin-bottom: 10px;
+  text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+/* About Us Section */
+.about-content {
+  padding: 20px;
+  margin: 20px 0;
+  /* background: #fafafa; */
+}
+
+.about-content h2 {
+  font-size: 2.5em;
+  text-align: center;
+  font-weight: bold;
+  color: #e67e22;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+.about-text {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.8;
+  margin-top: 2rem;
+  text-align: justify; /* Makes the paragraph text more readable */
+  font-family: 'Arial', sans-serif; /* Limit text width */
+}
+
+/* Meet Our Team Section */
+.contact-persons-section {
+  padding: 30px 20px;
+  /* background: #f4f4f4; */
+}
+
+.contact-persons-section h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+  
+
+  color: #e67e22;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.contact-persons-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-person-card {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+}
+
+.contact-person-card:hover {
+  transform: scale(1.05);
+}
+
+.contact-person-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.contact-person-name {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-person-title {
+  font-size: 1.2em;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.contact-person-info {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Services Section */
+.about-services {
+  padding: 20px;
+  margin: 20px 0;
+  /* background: #fafafa; */
+}
+
+.about-services h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #e67e22;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about-services ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.about-services li {
+  background: #e67e22;
+  color: #fff;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  width: calc(50% - 20px); /* Adjust width for two items per row with margins */
+  text-align: center;
+}
+
+.about-services li:hover {
+  background: #d35400;
+}
+footer.about-contact {
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  border-top: 5px solid #e67e22;
+  box-sizing: border-box;
+}
+
+.about-contact .contact-img {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.about-contact .contact-img img {
+  width: 100px;
+  height: 50px;
+  filter: invert(1);
+}
+
+.about-contact .contact-info {
+  margin-bottom: 10px;
+}
+
+.about-contact .contact-info a {
+  color: #e67e22;
+  text-decoration: none;
+}
+
+.about-contact .contact-info span {
+  display: block;
+  margin-top: 5px;
+  color: #fff;
+}
+
+.about-contact p {
+  margin: 5px 0;
+}
+
+.about-contact a {
+  color: #e67e22;
+  text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .about-header h1 {
+    font-size: 2.5em; /* Adjust for smaller screens */
+  }
+
+  .about-content h2,
+  .contact-persons-section h2,
+  .about-services h2 {
+    font-size: 2em; /* Smaller headings on mobile */
+  }
+
+  .about-services li {
+    width: 100%; /* Stack services list items on smaller screens */
+  }
+
+  .contact-person-card {
+    width: 100%; /* Full width for contact cards on smaller screens */
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-info a, .contact-info span {
+    font-size: 0.9em;
+    margin-right: 0;
+  }
+
+  .about-contact p {
+    font-size: 0.9em;
+  }
+
+  .about-header h1 {
+    font-size: 2.5em; /* Adjust for smaller screens */
+  }
+
+  .contact-img img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-info a,
+  .contact-info span {
+    font-size: 0.9em;
+  }
+}

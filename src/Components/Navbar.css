@@ -1,0 +1,90 @@
+/* General Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  color: black;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo img {
+  height: 80px; /* Adjusted size */
+  width: auto;
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+  font-size: 1.8rem;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  z-index: 20;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: none; /* Hide options by default */
+  flex-direction: column;
+  position: absolute;
+  top: 3.5rem;
+  right: 1rem;
+  background-color: white;
+  width: 200px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+/* Show options when active and align to the rightmost corner */
+.nav-links.active {
+  display: flex;
+  top: 0; /* Align menu to the top */
+  right: 0; /* Align menu to the rightmost corner */
+  height: 30vh; /* Take full screen height */
+  width: 250px; /* Adjust the menu width */
+  background-color: white;
+  padding: 2rem;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Shadow for better visibility */
+}
+
+/* Adjusting links inside the menu */
+.nav-links li {
+  margin-bottom: 1.5rem;
+}
+
+.nav-links li:last-child {
+  margin-bottom: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #007bff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none; /* Ensure nav-links are hidden on small screens by default */
+  }
+}

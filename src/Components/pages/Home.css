@@ -1,0 +1,22 @@
+/* Style for the Carousel Title */
+.carousel-caption {
+    font-family: 'Poppins', sans-serif; /* Use a modern, attractive font */
+    font-weight: 700;                   /* Bold font for emphasis */
+    font-size: 3rem;                    /* Increase font size */
+    text-transform: uppercase;          /* Make title uppercase */
+    letter-spacing: 1px;                /* Add letter spacing for readability */
+    color: #ffffff;                    /* White color for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a slight shadow to enhance visibility */
+    text-align: center;                 /* Center the title */
+    margin-bottom: 20px;                /* Add margin below the title */
+  }
+  
+  /* Style for the Carousel Text (description) */
+  .carousel-caption p {
+    font-size: 1.25rem;                 /* Set the font size of the description */
+    font-weight: 400;                   /* Regular weight for description */
+    color: #ffffff;                    /* White text for better contrast */
+    opacity: 0.9;                       /* Slight transparency for text */
+    line-height: 1.5;                   /* Add line height for readability */
+  }
+  
