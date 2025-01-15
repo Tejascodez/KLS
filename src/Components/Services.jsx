@@ -69,10 +69,8 @@ const TransportServices = () => {
 <p>
 
 At King Logistics and Solutions, we specialize in containerized transportation services from factory premises to the sea ports of Kandla and Mundra, covering a radius of 200 kilometers from the ports. Our diverse fleet of 250 trucks allows us to cater to the unique requirements of our clients, ensuring flexibility and efficiency in every shipment. 
-
-Our operations are managed by a team of highly trained and experienced professionals who oversee every aspect of the fleet's movement, from vehicle allocation for shipments to tracking their return for gate-ins at the ports. Additionally, we have dedicated operations teams stationed at both Kandla and Mundra ports. These teams handle the end-to-end process of container management, including processing Delivery Orders, vehicle allocation, lift ONs, and coordinating the smooth movement of stuffed containers into the ports.
-
-With a commitment to excellence and customer satisfaction, King Logistics and Solutions ensures reliable, timely, and hassle-free transportation services tailored to your needs.</p>
+t's movement, from vehicle allocation for shipments to tracking their return for gate-ins at the ports. Additionally, we have dedicated operations teams stationed at both Kandla and Mundra ports. 
+Our operations are managed by a team of highly trained and experienced professionals who oversee every aspect of the fleeThese teams handle the end-to-end process.</p>
         </div>
 
       </section>

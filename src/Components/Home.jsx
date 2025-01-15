@@ -9,6 +9,7 @@ import './pages/Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ContactUs from './pages/Contactus';
 
+
 const Home = () => {
     const items = [
         {
@@ -43,7 +44,7 @@ const Home = () => {
 
             {/* Sections */}
             <div id="services" style={{ marginTop: '50px' }}>
-                <Services />
+                <Services   />
             </div>
 
             <div id="about-us" style={{ marginTop: '50px' }}>

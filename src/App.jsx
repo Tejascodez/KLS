@@ -9,6 +9,7 @@ import Services from './Components/Services';
 import AboutUs from './Components/pages/AboutUs';
 import ContactUs from './Components/pages/Contactus';
 import Home from './Components/Home';
+import OurServices from './Components/pages/OurServices';
 
 function App() {
 
@@ -16,17 +17,18 @@ function App() {
   return (
     <>
 
-<Home/>
 
-{/* <BrowserRouter>
+
+<BrowserRouter>
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<ContactUs/>} />
-        <Route path="/aboutus" element={<AboutUs />} />
+     
+        <Route path="/" element={<Home/>} />
+        <Route path="/home" element={<Home/>} />
+        <Route path="/services" element={<OurServices/>} />
+       
       </Routes>
-</BrowserRouter> */}
+</BrowserRouter>
 
     </>
   );

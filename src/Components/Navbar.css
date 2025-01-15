@@ -1,90 +1,114 @@
-/* General Styling */
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar container */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: white;
-  color: black;
+  /* background-color: #333; */
+  padding: 15px 30px;
+  color: #333;
   position: relative;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo */
+/* Logo styling */
 .logo img {
-  height: 80px; /* Adjusted size */
-  width: auto;
+  width: 120px;
 }
 
-/* Hamburger Menu Styling */
-.hamburger {
-  font-size: 1.8rem;
-  color: black;
-  cursor: pointer;
-  background-color: white;
-  padding: 0.5rem;
-  border: 1px solid black;
-  border-radius: 5px;
-  z-index: 20;
-}
-
-/* Navigation Links */
+/* Navbar links container */
 .nav-links {
-  list-style: none;
-  display: none; /* Hide options by default */
-  flex-direction: column;
-  position: absolute;
-  top: 3.5rem;
-  right: 1rem;
-  background-color: white;
-  width: 200px;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 10;
-}
-
-/* Show options when active and align to the rightmost corner */
-.nav-links.active {
   display: flex;
-  top: 0; /* Align menu to the top */
-  right: 0; /* Align menu to the rightmost corner */
-  height: 30vh; /* Take full screen height */
-  width: 250px; /* Adjust the menu width */
-  background-color: white;
-  padding: 2rem;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Shadow for better visibility */
+  margin-right: 35%;
 }
 
-/* Adjusting links inside the menu */
 .nav-links li {
-  margin-bottom: 1.5rem;
+  margin: 0 15px;
+  list-style: none;
 }
 
-.nav-links li:last-child {
-  margin-bottom: 0;
-}
-
-.nav-links li a {
+.nav-links a {
   text-decoration: none;
-  color: black;
-  font-size: 1.1rem;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  color: #333;
+  font-weight: 800;
+  font-size: 18px;
+  transition: color 0.3s;
 }
 
-.nav-links li a:hover {
-  color: #007bff;
+.nav-links a:hover {
+  color: #3498db;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .hamburger {
+/* Hamburger icon (only visible on mobile) */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 767px) {
+  /* Navbar container styling for mobile */
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  /* Hide the nav links by default on mobile */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: #333; */
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 999;
+   
+  }
+
+  /* Show the nav links when the active class is added */
+  .nav-links.active {
     display: block;
   }
 
+  /* Display the hamburger icon on mobile */
+  .hamburger {
+    display: block;
+
+  }
+
+  /* Styling for nav items on mobile */
+  .nav-links li {
+    margin: 15px 0;
+    color: #333;
+  }
+
+  .nav-links a {
+    font-size: 22px;
+    color: #333;
+  }
+}
+
+/* Navbar links container for desktop */
+@media (min-width: 768px) {
   .nav-links {
-    display: none; /* Ensure nav-links are hidden on small screens by default */
+    display: flex !important;
+  }
+
+  .hamburger {
+    display: none;
   }
 }
