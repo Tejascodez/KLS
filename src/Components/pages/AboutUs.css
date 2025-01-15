@@ -17,7 +17,7 @@
 .about-header h1 {
   font-size: 3em; /* Increase font size */
   font-weight: bold; /* Make text bold */
-  color: #e67e22; /* Add an attractive color */
+  color: #333; /* Add an attractive color */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
   letter-spacing: 2px; /* Add letter spacing */
   margin-bottom: 10px;
@@ -35,7 +35,7 @@
   font-size: 2.5em;
   text-align: center;
   font-weight: bold;
-  color: #e67e22;
+  color: #333;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   text-transform: uppercase; /* Uppercase for emphasis */
@@ -62,7 +62,7 @@
   text-align: center;
   
 
-  color: #e67e22;
+  color: #fff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -126,7 +126,7 @@
 .about-services h2 {
   font-size: 2.5em;
   font-weight: bold;
-  color: #e67e22;
+  color: #333;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -142,7 +142,7 @@
 }
 
 .about-services li {
-  background: #e67e22;
+  background: #333;
   color: #fff;
   padding: 15px;
   margin: 10px;
@@ -162,7 +162,7 @@ footer.about-contact {
   background: #333;
   color: #fff;
   text-align: center;
-  border-top: 5px solid #e67e22;
+  border-top: 5px solid #333;
   box-sizing: border-box;
 }
 
@@ -184,7 +184,7 @@ footer.about-contact {
 }
 
 .about-contact .contact-info a {
-  color: #e67e22;
+  color: #333;
   text-decoration: none;
 }
 
@@ -199,7 +199,7 @@ footer.about-contact {
 }
 
 .about-contact a {
-  color: #e67e22;
+  color: #333;
   text-decoration: none;
 }
 

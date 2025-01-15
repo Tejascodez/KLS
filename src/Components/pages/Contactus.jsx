@@ -1,73 +1,36 @@
-import React, { useState } from 'react';
-import './Contact.css'; // CSS file for styling
+    import React from 'react';
+    import './Contact.css'; // CSS file for styling
 
-const ContactUs = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+    const ContactUs = () => {
+      return (
+        <div className="contact-us-container">
+          <h2 className="contact-us-title">Contact Us</h2>
+          
+          <div className="contact-info-grid">
+            <div className="contact-info">
+              <span>Mahesh Jadhav</span>
+              <a href="tel:+919867569737">+91 98675 69737</a>
+              <a href="mailto:info@kinglogistics.in">info@kinglogistics.in</a>
+            </div>
+            
+            <div className="contact-info">
+              <span>Nandkumar Jadhav</span>
+              <a href="tel:+91808383080">+91 80838 3080</a>
+              <a href="mailto:kinglogistics2023@gmail.com">kinglogistics2023@gmail.com</a>
+            </div>
+          </div>
+          
+          <p>
+            <b>A-304, Vision Residency, Wing A, Plot No. 61, Sector 17, Kalamboli,<br />
+            Navi Mumbai, Maharashtra - 410218.</b> 
+          </p>
+          
+          {/* Footer Section */}
+          <footer className="contact-footer">
+            © 2025 King Logistics and Solutions - All Rights Reserved
+          </footer>
+        </div>
+      );
+    };
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Thank you for your message!");
-  };
-
-  return (
-    <div className="contact-us-container">
-      <section className="contact-header">
-        <h1>Contact Us</h1>
-      </section>
-
-      <section className="contact-form-section">
-        <form className="contact-form" onSubmit={handleSubmit}>
-          <label htmlFor="name" className="form-label">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            className="form-input"
-            required
-          />
-
-          <label htmlFor="email" className="form-label">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className="form-input"
-            required
-          />
-
-          <label htmlFor="message" className="form-label">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            className="form-textarea"
-            required
-          ></textarea>
-
-          <button type="submit" className="submit-btn">Submit</button>
-        </form>
-      </section>
-
-      
-    </div>
-  );
-};
-
-export default ContactUs;
+    export default ContactUs;

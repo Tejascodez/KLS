@@ -7,6 +7,7 @@ import carousel from '../assets/carousel.png';
 import car2 from '../assets/aboutus1.png';
 import './pages/Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ContactUs from './pages/Contactus';
 
 const Home = () => {
     const items = [
@@ -47,6 +48,7 @@ const Home = () => {
 
             <div id="about-us" style={{ marginTop: '50px' }}>
                 <AboutUs />
+                <ContactUs/>
             </div>
         </div>
     );
