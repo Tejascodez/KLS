@@ -1,20 +1,25 @@
 import React from "react";
+import us from '../../assets/aboutus.png'
+import Navbar from "../Navbar";
 import "./AboutUs.css"; 
-import logo from '../../assets/image.png'; // External CSS file for styling
-import call from '../../assets/call.png';
-import contact from '../../assets/contact.png';
-import email from '../../assets/email.png';
-import profile from '../../assets/profile.png';
+
 
 const AboutUs = () => {
   return (
-    <div className="about-us-container">
-      {/* Header Section */}
-     
 
-      {/* Company Overview */}
+    <>
+   < Navbar/>
+    
+
+    <div className="about-us-container">
+      <div className="caro">
+        <img src={us} alt="" />
+      </div>
+   
       <section className="about-content">
-        <h2>About Us</h2>
+      <h2>ABOUT US</h2>
+
+      
         <p className="about-text">
           Established with the mission to simplify logistics and provide top-notch freight services, King Logistics & Solutions has become a name synonymous with reliability and efficiency. With a focus on Customs Brokering and International Freight Forwarding by Air and Sea, we cater to diverse logistical needs across the globe.
         </p>
@@ -38,9 +43,12 @@ Today we provide various services, under one roof such as Customs Brokering, Tra
         </ul>
       </section>
 
-   
+      <footer className="contact-footer">
+            © 2025 King Logistics and Solutions - All Rights Reserved
+          </footer>
  
     </div>
+    </>
   );
 };
 

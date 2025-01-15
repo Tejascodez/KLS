@@ -16,6 +16,19 @@
     padding: 30px;
     text-align: center;
   }
+
+.service-img{
+  width: 100%;
+}
+.service-img img{
+ max-width: 100%;
+ position: absolute;
+ display: flex;
+ flex-direction: flex-start;
+
+  height: 55vh;
+}
+
   
   /* Title styling */
   .services-title {

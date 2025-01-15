@@ -10,6 +10,15 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
+.contact-bg{
+  width: 80%;
+
+}
+.contact-bg img{
+  width: 50%;
+  margin-top: -10px;
+  margin-left: 38%;
+}
 
 /* Title */
 .contact-us-title {

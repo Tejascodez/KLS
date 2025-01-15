@@ -14,6 +14,16 @@
   transition: color 0.3s ease;
 }
 
+.about-text p{
+  font-size: 1.3rem;
+  margin-left: 2rem;
+
+}
+.info p{
+  font-size: 1.3rem;
+  margin-left: 2rem;
+}
+
 .service-title:hover {
   color: #007bff;  /* Change color on hover */
 }
@@ -34,7 +44,7 @@
 }
 
 .service-icon {
-  font-size: 3rem;
+
   margin-bottom: 20px;
   color: #2a5d84;
 }
@@ -68,7 +78,7 @@
 
 .about-header p {
   margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   justify-content: center;
   align-items: center;
   color: #333;

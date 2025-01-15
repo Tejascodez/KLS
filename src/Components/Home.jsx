@@ -47,10 +47,10 @@ const Home = () => {
                 <Services   />
             </div>
 
-            <div id="about-us" style={{ marginTop: '50px' }}>
-                <AboutUs />
-                <ContactUs/>
-            </div>
+                <footer className="contact-footer">
+            © 2025 King Logistics and Solutions - All Rights Reserved
+          </footer>
+       
         </div>
     );
 };

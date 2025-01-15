@@ -1,12 +1,22 @@
     import React from 'react';
-    import './Contact.css'; // CSS file for styling
+    import Navbar from '../Navbar';
+    import cntbg from '../../assets/contactus.png'
+    import './Contact.css'; 
 
     const ContactUs = () => {
       return (
+        <>
+        <Navbar/>
+        
+    
         <div className="contact-us-container">
+          <div className="contact-bg">
+            <img src={cntbg} alt="" />
+          </div>
           <h2 className="contact-us-title">Contact Us</h2>
           
           <div className="contact-info-grid">
+
             <div className="contact-info">
               <span>Mahesh Jadhav</span>
               <a href="tel:+919867569737">+91 98675 69737</a>
@@ -30,6 +40,8 @@
             © 2025 King Logistics and Solutions - All Rights Reserved
           </footer>
         </div>
+        
+</>
       );
     };
 

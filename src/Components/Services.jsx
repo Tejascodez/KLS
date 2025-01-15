@@ -1,6 +1,7 @@
 import React from 'react';
 import './Services.css'; // Add CSS file for styling
-import side from '../assets/side.png'
+import AboutUs from './pages/AboutUs';
+
 
 const transportServices = [
   {
@@ -58,20 +59,20 @@ const TransportServices = () => {
   return (
     <div className="transport-services-container">
        <section className="about-header">
+       <h2>ABOUT US</h2>
+    
         <h1>Welcome to King Logistics & Solutions</h1>
         <p>
           <b>Your trusted partner for Customs Brokering, International Freight Forwarding, and Transport Solutions.</b>
         </p>
 
-        <div className="img">
-        <img src={side} alt="" />
+        <p className="about-text">
+       <b> King Logistics & Solutions </b> was founded in Mumbai as a Customs House Broker, and service provider to Exporters and Importers dealing with Customs issues.
+Upon receiving Positive feedback and support from Exporters and Importers, we have given a thought of opening our doors for handling International Freight Forwarding by  Sea. Thus Extending our freight forwarding services to our clientele to use our expertise in handling their Exports and Imports. 
+Today we provide various services, under one roof such as Customs Brokering, Transportation, International Freight Forwarding by Sea, Warehousing and Project Handling.
+        </p>
 
-<p>
 
-At King Logistics and Solutions, we specialize in containerized transportation services from factory premises to the sea ports of Kandla and Mundra, covering a radius of 200 kilometers from the ports. Our diverse fleet of 250 trucks allows us to cater to the unique requirements of our clients, ensuring flexibility and efficiency in every shipment. 
-t's movement, from vehicle allocation for shipments to tracking their return for gate-ins at the ports. Additionally, we have dedicated operations teams stationed at both Kandla and Mundra ports. 
-Our operations are managed by a team of highly trained and experienced professionals who oversee every aspect of the fleeThese teams handle the end-to-end process.</p>
-        </div>
 
       </section>
 
