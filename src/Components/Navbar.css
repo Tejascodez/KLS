@@ -14,7 +14,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #333; */
   padding: 15px 30px;
   color: #333;
   position: relative;
@@ -54,7 +53,7 @@ body {
   display: none;
   font-size: 30px;
   cursor: pointer;
-  color: white;
+  color: black; /* Set hamburger icon color to black */
 }
 
 /* Responsive styles for mobile */
@@ -69,7 +68,7 @@ body {
     display: none;
     flex-direction: column;
     width: 100%;
-    /* background-color: #333; */
+    background-color: white; /* Set toggle menu background to white */
     position: absolute;
     top: 90px;
     left: 0;
@@ -77,7 +76,6 @@ body {
     text-align: center;
     padding: 20px 0;
     z-index: 999;
-   
   }
 
   /* Show the nav links when the active class is added */
@@ -88,18 +86,21 @@ body {
   /* Display the hamburger icon on mobile */
   .hamburger {
     display: block;
-
+    color: black; /* Hamburger icon remains black */
   }
 
   /* Styling for nav items on mobile */
   .nav-links li {
     margin: 15px 0;
-    color: #333;
   }
 
   .nav-links a {
     font-size: 22px;
-    color: #333;
+    color: #333; /* Adjust for readability against white background */
+  }
+
+  .nav-links a:hover {
+    color: #3498db; /* Maintain hover color */
   }
 }
 
