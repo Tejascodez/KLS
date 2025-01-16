@@ -1,5 +1,28 @@
-/* General Container Styling */
+/* Import Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* General Styling for <h2> Tags */
+h2 {
+  text-align: left;
+  margin-left: 2rem;
+  color: #333;
+}
+
+/* Paragraph Styling */
+p {
+  margin: 1rem 2rem;
+  line-height: 1.6;
+  color: #555;
+}
 
 /* Service Title Styling */
 .service-title {
@@ -14,59 +37,15 @@
   transition: color 0.3s ease;
 }
 
-.about-text p{
-  font-size: 1.3rem;
-  margin-left: 2rem;
-
-}
-.info p{
-  font-size: 1.3rem;
-  margin-left: 2rem;
-}
-
 .service-title:hover {
-  color: #007bff;  /* Change color on hover */
-}
-
-/* Service Card Styling */
-.transport-service-card {
-  background-color: #f4f4f4;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s;
-}
-
-.transport-service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.service-icon {
-
-  margin-bottom: 20px;
-  color: #2a5d84;
-}
-
-.service-description {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.6;
-}
-  
-
-.transport-services-container {
-  padding: 2rem;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  color: #007bff;
 }
 
 /* About Section Styling */
 .about-header {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the title */
+  align-items: center;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -77,27 +56,77 @@
 }
 
 .about-header p {
-  margin-bottom: 1rem;
   font-size: 1.3rem;
-  justify-content: center;
-  align-items: center;
   color: #333;
+  margin:  3rem 6rem;
+}
+
+/* Services Section */
+.services-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+/* Info Section Styling */
+.info p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.8;
+  margin: 1.5rem 6rem;
+  text-align: justify;
+}
+
+/* Services Grid Layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2rem;
+}
+
+/* Transport Service Card Styling */
+.transport-service-card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.transport-service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+  margin-bottom: 20px;
+  color: #2a5d84;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
 }
 
 /* Image and Text Section */
 .img {
   display: flex;
-  align-items: flex-start; /* Align items at the top */
-  gap: 8rem; /* Space between image and text */
+  align-items: flex-start;
+  gap: 8rem;
   margin-top: 2rem;
 }
 
 .img img {
   margin-top: 2.5rem;
-  max-width: 450px; /* Adjust image size */
-  height:32vh; /* Maintain aspect ratio */
-  border-radius: 8px; /* Optional: Add rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for better look */
+  max-width: 450px;
+  height: 32vh;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .img p {
@@ -105,98 +134,80 @@
   color: #333;
   line-height: 1.8;
   margin-top: 2rem;
-  text-align: justify; /* Makes the paragraph text more readable */
-  font-family: 'Arial', sans-serif; /* Limit text width */
+  text-align: justify;
 }
 
-/* Services Section */
-.services-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-top: 2rem;
-  text-align: center;
-  color: #333;
-}
-
-.info p {
-  font-size: 1.2rem;
-  color: #333;
-  line-height: 1.8;
-  margin-top: 2rem;
-  text-align: justify; /* Makes the paragraph text more readable */
-  font-family: 'Arial', sans-serif;
-}
-
-/* Services Grid Layout */
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
-  gap: 2rem; /* Adds space between the cards */
-  margin-top: 2rem;
-}
-
-/* Ensuring the grid is responsive */
+/* Responsive Adjustments */
 @media (max-width: 1024px) {
   .services-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 items per row on medium screens */
-  }
-
-  .service-title {
-    font-size: 1.3rem; /* Slightly smaller font size on medium screens */
-  }
-
-  .service-description {
-    font-size: 0.95rem; /* Slightly smaller description text */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .img {
-    gap: 4rem; /* Less gap between image and text */
+    gap: 4rem;
   }
 
   .img img {
-    max-width: 350px; /* Reduce image size on smaller screens */
-    height: auto; /* Allow the height to adjust automatically */
+    max-width: 350px;
+    height: auto;
   }
 }
 
 @media (max-width: 768px) {
   .services-grid {
-    grid-template-columns: 1fr; /* 1 item per row on small screens */
-  }
-
-  .service-title {
-    font-size: 1.2rem; /* Smaller font size on small screens */
-  }
-
-  .service-description {
-    font-size: 0.9rem; /* Smaller description text */
+    grid-template-columns: 1fr;
   }
 
   .about-header h1 {
-    font-size: 2rem; /* Adjust title size on smaller screens */
+    font-size: 2rem;
   }
 
   .about-header p {
-    font-size: 1rem; /* Adjust text size */
+    font-size: 1rem;
+    margin: 0 1.5rem 1rem;
   }
 
   .img {
-    flex-direction: column; /* Stack the image and text vertically */
-    gap: 2rem; /* Adjust gap between image and text */
+    flex-direction: column;
+    gap: 2rem;
   }
 
   .img img {
-    max-width: 90%; /* Make the image responsive */
-    height: auto; /* Adjust image height */
-  }
-
-  .img p {
-    font-size: 1rem; /* Adjust font size for readability */
+    max-width: 90%;
+    height: auto;
   }
 }
 
 @media (max-width: 480px) {
-  /* Make the font size even smaller on very small devices */
+  .services-title {
+    font-size: 1.8rem;
+  }
+
+  .about-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-header p {
+    font-size: 0.9rem;
+  }
+
+  .img {
+    gap: 1.5rem;
+  }
+
+  .img img {
+    max-width: 100%;
+  }
+
+  .info p {
+    font-size: 1rem;
+  }
+
+  .transport-service-card {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
   .service-title {
     font-size: 1rem;
   }
@@ -204,35 +215,4 @@
   .service-description {
     font-size: 0.8rem;
   }
-
-  .about-header h1 {
-    font-size: 1.5rem; /* Make the heading smaller */
-  }
-
-  .about-header p {
-    font-size: 0.9rem; /* Make the paragraph smaller */
-  }
-
-  .img {
-    gap: 1.5rem; /* Reduce space between image and text */
-  }
-
-  .img img {
-    max-width: 100%; /* Image takes full width on very small screens */
-    height: auto; /* Maintain aspect ratio */
-  }
-
-  .info p {
-    font-size: 1rem; /* Adjust text size for readability */
-  }
-
-  .services-title {
-    font-size: 1.8rem; /* Adjust services title size */
-  }
-}
-
-/* Additional Styling for Small Devices */
-.transport-service-card {
-  padding: 1rem; /* Adjust padding on small screens */
-  font-size: 0.9rem; /* Reduce font size */
 }

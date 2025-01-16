@@ -6,7 +6,15 @@
   line-height: 1.6;
   max-width: 100%;
   margin: 0 auto;
+
+
 }
+/* General Paragraph Styling */
+p {
+  margin: 15px 60px; /* Adds vertical spacing to all paragraphs */
+  line-height: 1.6; /* Ensures good readability */
+}
+
 
 .caro{
   width: 120%;
@@ -14,6 +22,7 @@
 .caro img{
   width: 100%;
   height: 45vh;
+  margin-top: 7.1%;
 }
 
 .about-header {

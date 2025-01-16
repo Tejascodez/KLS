@@ -7,6 +7,7 @@
 
 body {
   font-family: Arial, sans-serif;
+  margin-top: 70px; /* Adjust to prevent content from being hidden under the fixed navbar */
 }
 
 /* Navbar container */
@@ -16,8 +17,13 @@ body {
   align-items: center;
   padding: 15px 30px;
   color: #333;
-  position: relative;
-  border: 1px solid #333;
+  position: fixed; /* Fixes the navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensures the navbar spans the entire width */
+  background-color: white; /* Add background color to avoid transparency issues */
+  border-bottom: 1px solid #333;
+  z-index: 1000; /* Ensures the navbar is above other elements */
 }
 
 /* Logo styling */
@@ -53,7 +59,7 @@ body {
   display: none;
   font-size: 30px;
   cursor: pointer;
-  color: black; /* Set hamburger icon color to black */
+  color: black;
 }
 
 /* Responsive styles for mobile */
@@ -68,9 +74,9 @@ body {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: white; /* Set toggle menu background to white */
+    background-color: white;
     position: absolute;
-    top: 90px;
+    top: 70px; /* Adjusted for fixed navbar */
     left: 0;
     right: 0;
     text-align: center;
@@ -86,7 +92,7 @@ body {
   /* Display the hamburger icon on mobile */
   .hamburger {
     display: block;
-    color: black; /* Hamburger icon remains black */
+    color: black;
   }
 
   /* Styling for nav items on mobile */
@@ -96,11 +102,11 @@ body {
 
   .nav-links a {
     font-size: 22px;
-    color: #333; /* Adjust for readability against white background */
+    color: #333;
   }
 
   .nav-links a:hover {
-    color: #3498db; /* Maintain hover color */
+    color: #3498db;
   }
 }
 
